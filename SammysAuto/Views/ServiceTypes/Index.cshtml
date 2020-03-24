@@ -9,7 +9,7 @@
 
 <div class="form-border">
     <p>
-        <a class="btn btn-sm-btn-primary" asp-action="Create">Create New</a>
+        <a class="btn btn-sm btn-primary" asp-action="Create">Create New</a>
     </p>
     <br />
 
@@ -28,7 +28,7 @@
                     @Html.DisplayFor(m => item.Name)
                 </td>
                 <td>
-                    EDIT | DELETE | DETAILS
+                    @Html.Partial("_TableButtonPartial", new IndividualButtonPartial { ServiceId = item.Id })
                 </td>
             </tr>
         }
