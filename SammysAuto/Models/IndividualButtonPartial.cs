@@ -32,7 +32,7 @@ namespace SammysAuto.Models
                     param.Append(String.Format("{0}", CustomerId));
                 }
 
-                if (CarId != 0 && ServiceId != null)
+                if (CarId != 0 && CarId != null)
                 {
                     param.Append(String.Format("{0}", CarId));
                 }
